@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Edit = () => {
+const EditClient = () => {
     return (
         <div>Edit Client</div>
     )
 }
 
-export default Edit
+export default EditClient

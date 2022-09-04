@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Add = () => {
+const AddClient = () => {
     return (
         <div>Add Client</div>
     )
 }
 
-export default Add
+export default AddClient
