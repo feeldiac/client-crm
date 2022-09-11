@@ -1,9 +1,12 @@
 import React from 'react'
+import { useNavigate } from 'react-router-dom'
 import { Formik, Form, Field, ErrorMessage } from 'formik'
 import * as Yup from 'yup'
 import Error from './Error'
 
 const FormComponent = () => {
+
+    const navigate = useNavigate()
 
     const addClientSchema = Yup.object().shape({
         name: Yup.string()
@@ -36,6 +39,8 @@ const FormComponent = () => {
 
             const json = await response.json()
             console.log(json);
+
+            navigate('/clients')
         } catch (error) {
             console.log(error.message);
         }
@@ -57,8 +62,10 @@ const FormComponent = () => {
                     notes: '',
                 }}
 
-                onSubmit={(values) => {
-                    handleSubmit(values)
+                onSubmit={async (values, { resetForm }) => {
+                    await handleSubmit(values)
+
+                    resetForm()
                 }}
 
                 validationSchema={addClientSchema}
