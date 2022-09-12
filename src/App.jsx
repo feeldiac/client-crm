@@ -4,20 +4,19 @@ import Base from "./layout/Base"
 import Home from "./pages/Home"
 import AddClient from "./pages/AddClient"
 import EditClient from "./pages/EditClient"
+import InspectClient from "./pages/InspectClient"
 
 function App() {
 
   return (
     <BrowserRouter>
       <Routes>
-        {/* <h1 className="text-xl font-extrabold">Hello world</h1> */}
-
         <Route path="/clients" element={<Base />}>
           <Route index element={<Home />} />
           <Route path="add" element={<AddClient />} />
           <Route path="edit/:id" element={<EditClient />} />
+          <Route path=":id" element={<InspectClient />} />
         </Route>
-
       </Routes>
     </BrowserRouter>
   )
