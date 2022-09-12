@@ -1,4 +1,3 @@
-import React from 'react'
 import Form from '../components/FormComponent'
 
 const AddClient = () => {
