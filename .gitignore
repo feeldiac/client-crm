@@ -24,4 +24,3 @@ dist-ssr
 *.sw?
 
 # JSON Server
-db.json

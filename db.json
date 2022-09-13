@@ -1,0 +1,36 @@
+{
+  "clients": [
+    {
+      "name": "Eriberto De La Rua",
+      "company": "Latam INC S.A.S",
+      "email": "eribertodelarua@gmail.com",
+      "telephone": "326512265235",
+      "notes": "Pedido sobre firma de abogados.",
+      "id": 2
+    },
+    {
+      "name": "Oscar Acosta",
+      "company": "Un Toque Digital",
+      "email": "correo@correo.com",
+      "telephone": "302161564",
+      "notes": "",
+      "id": 3
+    },
+    {
+      "name": "Taharka ",
+      "company": "Nubank",
+      "email": "tahacarrringhton@gmail.com",
+      "telephone": "321531532",
+      "notes": "Wants a new profile for bank apps.",
+      "id": 6
+    },
+    {
+      "name": "Daniela",
+      "company": "Dani Store",
+      "email": "dani@dani.com",
+      "telephone": "355889966",
+      "notes": "Tienda de venta online.",
+      "id": 7
+    }
+  ]
+}
