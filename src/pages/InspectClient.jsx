@@ -31,7 +31,7 @@ const InspectClient = () => {
 
     return (
         loading ? <Spinner /> : (
-            Object.keys(client).length === 0 ? <p>No hay resultado</p> : (
+            Object.keys(client).length === 0 ? <p>There are not coincidences</p> : (
                 <div>
                     <h1 className='font-black text-4xl text-blue-800'>Inspect Client:
                         {" "}{client.name}

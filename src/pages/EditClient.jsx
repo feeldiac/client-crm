@@ -35,7 +35,9 @@ const EditClient = () => {
             <h1 className='font-black text-4xl text-blue-800'>Edit Client</h1>
             <p>Use this form to update the client information</p>
 
-            <Form client={client} loading={loading} />
+            {client?.name ? (
+                <Form client={client} loading={loading} />
+            ) : <p>Invalid client ID</p>}
         </>
     )
 }
